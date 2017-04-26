@@ -18,11 +18,11 @@ It supports
 Address Cache can be initialized by:
 
 1. Passing Max Age and Time unit in the construtor. Default parameters will be used for the cleanup job
-```sh
+```
 $ public AddressCache(long maxAge, TimeUnit unit) {}
 ```
 2. Passing Max Age, Initial delay , CleanupFrequency and TimeUnit
-```sh
+```
 $ public AddressCache(long maxAge, long initialDelay, long cleanupFrequency, TimeUnit unit) {}
 ```
 Note- Setting initialDelay and CleanupFrequency to 0 will disable the cleanup thread.
